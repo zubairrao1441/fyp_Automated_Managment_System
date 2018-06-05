@@ -1,0 +1,15 @@
+<div id="ajax-timeline">
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('#ajax-timeline').load('studentTimeline.php')
+
+            function getTimelineData(){
+                setInterval(function () {
+                    $('#ajax-timeline').load('studentTimeline.php')
+                }, 3000);
+            }
+            getTimelineData();
+        });
+    </script>
+</div>
